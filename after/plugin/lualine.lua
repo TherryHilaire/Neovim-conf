@@ -171,7 +171,7 @@ ins_right {
 -- Add components to right sections
 ins_right {
     'branch',
-    icon = '',
+    icon = ' ',
     color = { fg = colors.violet, gui = 'bold' },
 }
 
