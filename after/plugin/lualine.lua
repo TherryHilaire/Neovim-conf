@@ -78,10 +78,6 @@ local function ins_right(component)
     table.insert(config.sections.lualine_x, component)
 end
 
-local function ins_center(component)
-    table.insert(config.sections.lualine_c, component)
-end
-
 ins_left {
     function()
         return '▊'
@@ -122,12 +118,6 @@ ins_left {
         return { fg = mode_color[vim.fn.mode()] }
     end,
     padding = { right = 1 },
-}
-
-ins_left {
-    -- filesize component
-    'filesize',
-    cond = conditions.buffer_not_empty,
 }
 
 ins_left {
