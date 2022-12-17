@@ -1,5 +1,6 @@
 require("therry.set")
 require("therry.remap")
+require("therry.packer")
 
 local augroup = vim.api.nvim_create_augroup
 local ThePrimeagenGroup = augroup('ThePrimeagen', {})
