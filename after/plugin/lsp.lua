@@ -56,7 +56,7 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-local opts = {
+require("symbols-outline").setup {
     -- whether to highlight the currently hovered symbol
     -- disable if your cpu usage is higher than you want it
     -- or you just hate the highlight
@@ -77,8 +77,7 @@ local opts = {
             other_hints_prefix = "",
         },
     },
-}
 
-require("symbols-outline").setup(opts)
+}
 
 lsp.setup()
