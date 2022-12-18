@@ -52,4 +52,5 @@ return require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
     use("jiangmiao/auto-pairs")
+    use 'simrat39/symbols-outline.nvim'
 end)
