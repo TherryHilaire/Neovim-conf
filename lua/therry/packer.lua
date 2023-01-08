@@ -53,4 +53,5 @@ return require('packer').startup(function(use)
     }
     use("jiangmiao/auto-pairs")
     use 'simrat39/symbols-outline.nvim'
+    use 'morhetz/gruvbox'
 end)
