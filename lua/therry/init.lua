@@ -3,7 +3,7 @@ require("therry.remap")
 require("therry.packer")
 
 local augroup = vim.api.nvim_create_augroup
-local ThePrimeagenGroup = augroup('ThePrimeagen', {})
+local TherryGroup = augroup('Therry', {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
@@ -24,7 +24,7 @@ autocmd('TextYankPost', {
 })
 
 autocmd({"BufWritePre"}, {
-    group = ThePrimeagenGroup,
+    group = TherryGroup,
     pattern = "*",
     command = "%s/\\s\\+$//e",
 })
