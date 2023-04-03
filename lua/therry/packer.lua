@@ -47,10 +47,6 @@ return require('packer').startup(function(use)
     }
 
     use("folke/zen-mode.nvim")
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
     use("jiangmiao/auto-pairs")
     use 'simrat39/symbols-outline.nvim'
     use 'morhetz/gruvbox'
